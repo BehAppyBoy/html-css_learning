@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
 		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#box {
+				width: 100%;
+				height: 60px;
+				/*margin-top: 5px;*/
+				/*固定定位：*/
+				/*参照物：浏览器可视区*/
+				position: fixed;
+				top: 0;
+				/*padding: 0;*/
+				background-color: goldenrod;
+			}
+			
 			.box1 {
 				width: 600px;
 				height: 400px;
@@ -35,13 +53,17 @@
 			}
 			/*position 查找参照物的顺序 ： 先找父级元素，如果有定位属性（position）就以这个父级元素作为参照物发生偏移
 			 如果没有找到就向外层逐一查找，知道找到有position属性的元素。如果一直都没有，那么就以最外层的html元素为参照物发生偏移*/
+			/*应用场景*/
 		</style>
 	</head>
+
 	<body>
+		<div id="box"></div>
 		<div class="box1">
 			<div class="box2">
 				<div class="box3"></div>
 			</div>
 		</div>
 	</body>
+
 </html>
