@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box1 {
+				width: 600px;
+				height: 400px;
+				margin: 100px auto;
+				background-color: gray;
+				border: 1px solid gray;
+			}
+			
+			.box2 {
+				width: 400px;
+				height: 200px;
+				margin: 50px auto;
+				background-color: green;
+				/*相对定位*/
+				/*相对于原来的位置发生偏移量*/
+				position: relative;
+				/*top: 100px;*/
+			}
+			
+			.box3 {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				/*绝对定位*/
+				/*参照物：有定位属性的最近的父级元素*/
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			/*position 查找参照物的顺序 ： 先找父级元素，如果有定位属性（position）就以这个父级元素作为参照物发生偏移
+			 如果没有找到就向外层逐一查找，知道找到有position属性的元素。如果一直都没有，那么就以最外层的html元素为参照物发生偏移*/
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="box2">
+				<div class="box3"></div>
+			</div>
+		</div>
+	</body>
+</html>
