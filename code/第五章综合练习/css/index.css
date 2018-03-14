@@ -44,7 +44,7 @@ a {
 
 .header-left {
 	height: 60px;
-	width: 300px;
+	width: auto;
 	/*border: 1px solid red;*/
 }
 
@@ -55,12 +55,6 @@ a {
 	display: inline-block;
 }
 
-.header-right {
-	height: 60px;
-	width: 300px;
-	border: 1px solid blue;
-}
-
 .header-left a {
 	width: 170px;
 	height: 44px;
@@ -68,15 +62,31 @@ a {
 	background: url(../img/download-all.gif) no-repeat;
 	background-position:-644px 0px;
 	margin-top: 10px;
+	margin-left: 20px;
 }
 
 .header-left span {
 	width: 86px;
 	height: 38px;
 	background: url(../img/download-all.gif) no-repeat;
-	background-position:-691px -50px;
-	
+	background-position:-691px -47px;
 }
 
+.header-right {
+	/*height: 60px;*/
+	width: auto;
+	/*border: 1px solid blue;*/
+	margin-right: 18px;
+	font-size: 12px;
+	margin-top: 38px;
+}
+
+.header-right a {
+	color: #2974b6;
+}
+
+.header-right .first-a {
+	color: #f8645c;
+}
 
 
