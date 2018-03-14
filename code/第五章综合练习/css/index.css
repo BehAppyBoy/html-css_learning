@@ -1,3 +1,82 @@
-body {
-	background-color: orange;
+/*css样式重置:html元素默认会有一些样式,可能会影响到我们布局*/
+/*公共的样式*/
+
+body, p, ul, li, input {
+	margin: 0px;
+	padding: 0px;
 }
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+/*浮动*/
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clearfix {
+   *zoom: 1;
+}
+
+.clearfix:after {
+      content:".";
+      display:block;
+      height:0;
+      visibility:hidden;
+      clear:both;
+}
+
+.header {
+	height: 60px;
+	border-bottom: 1px solid #dcdcdc;
+	/*如果去拖动缩放浏览器窗口的大小 header的宽度是会发生变化的，变化的范围是>=960*/
+	/*最小宽度：如果浏览器的宽度小于960px 就会出现滚动条 header的最小宽度都是960px*/
+	min-width: 960px;
+}
+
+.header-left {
+	height: 60px;
+	width: 300px;
+	/*border: 1px solid red;*/
+}
+
+/*空格 后台选择器 ，多元素选择器*/
+.header-left a, .header-left span { 
+	/*让a链接和span里面的文字消失，通过背景图片来显示*/
+	text-indent: -9999px;
+	display: inline-block;
+}
+
+.header-right {
+	height: 60px;
+	width: 300px;
+	border: 1px solid blue;
+}
+
+.header-left a {
+	width: 170px;
+	height: 44px;
+	/*把所有小图标都放在一个图片上的目的：性能优化 减少请求次数*/
+	background: url(../img/download-all.gif) no-repeat;
+	background-position:-644px 0px;
+	margin-top: 10px;
+}
+
+.header-left span {
+	width: 86px;
+	height: 38px;
+	background: url(../img/download-all.gif) no-repeat;
+	background-position:-691px -50px;
+	
+}
+
+
+
