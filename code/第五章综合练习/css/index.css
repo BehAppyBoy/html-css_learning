@@ -201,3 +201,88 @@ a {
 	margin-top: 10px;
 
 }
+
+/*下载方式部分*/
+
+.download-method {
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.download-method-content {
+	width: 960px;
+	height: 200px;
+	margin: 0px auto;
+}
+
+.download-method-left input, .download-method-left img, .download-method-left button {
+	/*垂直居中对齐*/
+	vertical-align: middle;
+	height: 32px;
+	margin-top: 20px;
+}
+
+.download-method-left .text-title, .download-method-right .code-left-title {
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+.download-method-left .phone {
+	width: 190px;
+}
+
+.download-method-left .check_code {
+	width: 100px;
+}
+
+.download-method-left img {
+	width: 80px;
+}
+
+.download-method-left .btn {
+	width: 100px;
+	background-color: #5197ff;
+	border: 0px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+}
+
+.download-method-left .check_code {
+	margin-left: 12px;
+}
+
+.download-method-right {
+	/*width: 300px;*/
+}
+
+.download-method-right p {
+	font-size: 12px;
+
+}
+
+.download-method-right .code-left {
+	width: 161px;
+	margin-left: 56px;
+}
+
+.download-method-right .code-left-title {
+	margin-bottom: 20px;
+}
+
+.code-right img {
+	margin-top: 50px;
+	margin-left: 40px;
+}
+
+/*底部版权*/
+.footer {
+	margin-top: 46px;
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.footer a {
+	font-size: 12px;
+	color: #666767;
+}
