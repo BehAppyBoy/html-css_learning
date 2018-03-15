@@ -160,3 +160,44 @@ a {
 	background-position: -790px -185px; 
 }
 
+/*对应的平台信息*/ 
+.download-info {
+	height: 439px;
+	width: 100%;
+	background: url(../img/download_bg.png) repeat-x;
+}
+
+.download-info-content {
+	height: 430px;
+	width: 960px;
+	background: url(../img/mac.jpg) no-repeat 0px 0px;
+	margin: 0px auto;
+	position: relative;
+}
+
+.download-info-text {
+
+	position: absolute;
+	width: 275px;
+	height: 146px;
+	top: 190px;
+	left: 590px;
+
+}
+
+.download-info-text p {
+	color: white;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+.download-info-text a {
+	display: block;
+	text-indent: -9999px;
+	width: 185px;
+	height: 59px;
+	background: url(../img/download-all.gif) no-repeat;
+	background-position: -694px -294px;
+	margin-top: 10px;
+
+}
