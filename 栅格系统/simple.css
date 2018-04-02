@@ -1,0 +1,28 @@
+.container {
+	width: 970px;
+	border: 1px solid red;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*把屏幕分成12份，计算每份占多宽*/
+
+.col_md_1 {
+	/*占一个格子*/
+	width: 8.3333333%;
+	height: 100px;
+	/*background-color: orange;*/
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.col_md_2 {
+	/*占两个格子*/
+}
+
+* {
+	box-sizing: border-box;
+}
